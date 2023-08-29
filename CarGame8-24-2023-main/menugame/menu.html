@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightSpeed</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="postion-texts">
+            <div class="game-name">
+                <p class="text-name">Velocity Viper</p>
+            </div>
+            <div class="menu-item">
+                <button id="playButton" class="play-button" onclick="startGame()">Start Game</button>
+                <button class="reset-button" onclick="resetGame()">Reset Highest Score</button>
+                <div id="scoreDisplay">Your Last Score is:</div> <!-- Added 'id' attribute -->  
+                <div id="audioContainer">
+                    <select id="musicSelect" class="styled-select">
+                        <option value="../menuaudio/m1.mp3">Song 1</option>
+                        <option value="../menuaudio/m2.mp3">Song 2</option>
+                        <option value="../menuaudio/m3.mp3">Song 3</option>
+                    </select>
+                
+                    <audio id="backgroundMusic" controls loop>
+                        <source id="musicSource" src="../menuaudio/m1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>     
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="../menugame/menu.js"></script>
+</html>

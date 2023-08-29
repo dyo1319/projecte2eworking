@@ -1,0 +1,149 @@
+/* Reset default styles for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../gamepics/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.postion-texts{
+    position: absolute;
+    left: 30px;
+    top:240px
+}
+
+/* Menu container */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Game name */
+.game-name {
+    background-color: rgba(255, 0, 191, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 36px; /* Increased font size */
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    border: 2px solid #ff00bf; /* Fancy border */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+}
+
+/* Menu items */
+.menu-item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.play-button,
+.reset-button {
+    background-color: rgba(255, 0, 191, 0.5);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Increased font size */
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    margin: 10px 0;
+    border: 2px solid #ff00bf; /* Fancy border */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+}
+
+/* Score display */
+#scoreDisplay {
+    background-color: rgba(255, 0, 191, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px; /* Increased font size */
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    margin-top: 20px;
+    border: 2px solid #ff00bf; /* Fancy border */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+}
+
+
+
+/* Style for the audio player container */
+.audio-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    background-color: #1e1e1e; /* Dark background color */
+    border-radius: 10px;
+    border: 2px solid #00ffcc; /* Bright cyan border */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Cyan shadow */
+    padding: 20px; /* Add some padding */
+}
+
+/* Style the audio controls */
+audio::-webkit-media-controls {
+    background-color: #1e1e1e; /* Dark background color */
+    border-radius: 10px;
+    border: none;
+}
+
+/* Style the play/pause button */
+audio::-webkit-media-controls-play-button {
+    background-color: #ff00bf; /* Bright cyan play button */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Style the volume control */
+audio::-webkit-media-controls-volume-slider {
+    background-color: #ff00bf; /* Bright cyan volume slider */
+    border-radius: 5px;
+    height: 6px;
+}
+
+/* Style the progress bar */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    color: #ff00bf; /* Bright cyan text and buttons */
+}
+
+/* Style the track name dropdown */
+#musicSelect {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ff00bf; /* Bright cyan border */
+    border-radius: 5px;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ff00bf; /* Bright cyan text color */
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Style for the audio player */
+#audioContainer audio {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1e1e1e; /* Dark background color */
+    border: 2px solid #ff00bf; /* Bright cyan border */
+    border-radius: 10px;
+}
+
+
+

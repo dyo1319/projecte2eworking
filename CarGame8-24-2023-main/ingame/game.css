@@ -1,0 +1,199 @@
+*{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+      display: block;
+      position: absolute;
+      min-height: 100vh;
+      min-width: 90%;
+      overflow: hidden;
+  }
+  
+
+  .fuel-percentage {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    height: 20px;
+    width: 50%;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffee00, #ff8800, #da1a13);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      font-family: "Digital", sans-serif; /* Use a digital-style font */
+    font-size: 20px; /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+/* Health Bar Styles */
+.low-health {
+    color: red;
+}
+
+.medium-health {
+    color: yellow;
+}
+
+/* Fuel Bar Styles */
+.low-fuel {
+    color: red;
+}
+
+.medium-fuel {
+    color: yellow;
+}
+
+  .health-bar {
+   
+      height: 20px;
+      width: 50%;
+      background: linear-gradient(to right, #00ff00, #e5ff00);
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      font-family: "Digital", sans-serif; /* Use a digital-style font */
+      font-size: 20px; /* Adjust font size as needed */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+
+  }
+  
+  .street-img {
+    background-size: cover;
+     /* background-image: url('../gamepics/8bit.png'); */
+      z-index: -1;
+      background-color: #059005a0;
+ 
+  } 
+  
+  .max-area {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex; /* Use flexbox for centering content */
+    height: 100vh; /* Use 100% of the viewport height */
+    width: 80%; /* Adjust the width as needed */
+    overflow: hidden;
+    background-color: #444; /* Dark gray background color for the street */
+    background-size: 100% 20px, cover; /* Adjust the size of stripes and background image */
+    background-position: 0 0, center; /* Position the stripes at the top and center the background image */
+}
+
+  
+  .left-trees, .right-trees {
+    position: absolute;
+    top: 0;
+    width: 200%; /* Half of the screen width for each side */
+    height: 200%;
+    background-size: cover;
+    
+
+}
+.left-trees {
+    left: 25px;
+}
+.right-trees {
+    right: 20px;
+}
+
+  .car {
+    z-index: 1;
+      margin: 30px;
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      bottom: 30px;
+      background-image: url('../gamepics/car2.png'); 
+      background-size: cover;
+  }
+  
+  
+
+  .Score {
+    display: block;
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 0px;
+    font-size: 24px;
+    text-align: left; /* Right-align text for a digital look */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 10px; /* Add padding for better spacing */
+    width: 132px; /* Allow the width to adjust based on the content */
+    height: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: "Digital", sans-serif; /* Use a digital-style font */
+}
+
+  
+  .lines {
+    width: 10px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
+}
+
+.lines2 {
+    bottom: 0px;
+    width: 10px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 30%;
+}
+
+
+.leftline {
+    width: 10px;
+    height: 100px;
+    background: rgb(217, 255, 0);
+    position: absolute;
+    left: 0px;
+    
+}
+
+.rightline {
+    width: 10px;
+    height: 100px;
+    background: rgb(217, 255, 0);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+    .EnemyCar {
+        position: absolute;
+        width: 50px; /* Adjust width as needed */
+        height: 100px; /* Adjust height as needed */
+        /* Replace with the path to your enemy car image */
+        background-size: contain; /* Adjust this property to 'contain' */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        background-position: center; /* Center the image */
+      }
+
+
+      .upgrade-instruction {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        height: 50px;
+        width: 300px;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
